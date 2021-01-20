@@ -1,0 +1,16 @@
+@import "../../../sass/main";
+.heading {
+	&__container {
+		line-height: 1.5;
+	}
+	&__heading {
+		font-family: $sans-serif;
+		&--main {
+			font-size: $font-size-4x;
+			color: $color-tertiary;
+		}
+		&--sub {
+			font-size: $font-size-xxl;
+		}
+	}
+}

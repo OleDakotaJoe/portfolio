@@ -1,0 +1,39 @@
+@import "../../../sass/main";
+
+.custom-button {
+	position: absolute;
+	font-size: $font-size-l;
+	color: $color-white;
+	background-color: transparent;
+	width: fit-content;
+	text-align: center;
+	border-radius: 5px;
+	border: solid 2px $color-white;
+	margin-top: 3rem;
+	transition: all 0.4s;
+	z-index: 200;
+	padding: 1rem 2rem;
+	font-family: inherit;
+	cursor: pointer;
+
+	&:focus,
+	&:active {
+		outline: $color-primary-bold;
+	}
+
+	&:hover {
+		background-color: $color-tertiary;
+		border: solid 2px $color-tertiary;
+		color: $color-white;
+	}
+
+	&.inverted {
+		background-color: $color-primary;
+		color: $color-white;
+
+		&:hover {
+			box-shadow: 1px 5px 20px $color-background;
+			transform: translateY(-0.5rem) scale(1.1);
+		}
+	}
+}

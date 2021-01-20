@@ -1,0 +1,42 @@
+@import "../../../sass/main";
+
+.section-heading {
+	&__container {
+		position: absolute;
+		top: 40%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		font-family: $sans-serif;
+		text-align: center;
+		width: 60rem;
+	}
+
+	&__heading {
+		color: white;
+		font-size: $font-size-4x;
+		&--main {
+		}
+		&--sub {
+		}
+		&--highlighted-name {
+			color: $color-primary;
+		}
+	}
+	&__button {
+		&--arrow {
+			will-change: transform;
+			display: inline-block;
+			text-align: center;
+			font-size: $font-size-xl;
+			transform: rotate(0deg);
+			transition: all 0.4s !important;
+		}
+		&:hover &--arrow {
+			display: inline-block;
+			transform: rotate(90deg);
+		}
+	}
+}

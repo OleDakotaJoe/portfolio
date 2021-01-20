@@ -1,0 +1,78 @@
+@import "./mixins";
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.site-wrapper {
+	overflow-x: hidden;
+}
+
+@include respond(tab-land) {
+	html {
+		font-size: 50%;
+	}
+}
+@include respond(tab-port) {
+	html {
+		font-size: 40%;
+	}
+}
+
+@include respond(phone) {
+}
+
+@include respond(small-phone) {
+}
+
+@include respond(big-desktop) {
+}
