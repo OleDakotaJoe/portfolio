@@ -1,7 +1,7 @@
 import React from "react";
 import "./tile-board.styles.scss";
-import Tile from "../../../components/about-section/tile-board/Tile.component";
-import SectionHeading from "../../../components/reusable/section-heading/SectionHeading.component";
+import Tile from "./Tile.component";
+import SectionHeading from "../../reusable/section-heading/SectionHeading.component";
 
 const TileBoard = () => {
 	return (

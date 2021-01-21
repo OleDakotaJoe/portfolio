@@ -1,8 +1,8 @@
 import React from "react";
 import "./profile.styles.scss";
 
-import ProfileDescription from "../../../components/about-section/profile/ProfileDescription.component";
-import ProfileImage from "../../../components/about-section/profile/ProfileImage.component";
+import ProfileDescription from "./ProfileDescription.component";
+import ProfileImage from "./ProfileImage.component";
 
 const Profile = () => {
 	return (

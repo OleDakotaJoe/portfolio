@@ -1,6 +1,6 @@
 import Navbar from "./components/navbar/Navigation.component";
-import AboutSection from "./containers/about/AboutSection.container";
-import HeroSection from "./containers/hero/hero.container";
+import AboutSection from "./components/about-section/AboutSection.container";
+import HeroSection from "./components/hero/hero.container";
 
 function App() {
 	return (

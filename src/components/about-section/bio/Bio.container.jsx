@@ -1,8 +1,8 @@
 import React from "react";
 import "./bio.styles.scss";
-import BioHeading from "../../../components/about-section/bio/BioHeading.component";
-import BioContent from "../../../components/about-section/bio/BioContent.component";
-import CustomButton from "../../../components/reusable/custom-button/CustomButton.component";
+import BioHeading from "./BioHeading.component";
+import BioContent from "./BioContent.component";
+import CustomButton from "../../reusable/custom-button/CustomButton.component";
 
 const Bio = () => {
 	return (

@@ -1,6 +1,6 @@
 import React from "react";
-import Value from "../../../components/about-section/values/Value.component";
-import SectionHeading from "../../../components/reusable/section-heading/SectionHeading.component";
+import Value from "./Value.component";
+import SectionHeading from "../../reusable/section-heading/SectionHeading.component";
 import "./value-container.styles.scss";
 
 const ValueContainer = () => {
