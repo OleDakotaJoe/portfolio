@@ -1,0 +1,25 @@
+@import "../../../sass/main";
+.section-about__tile-board {
+	&--container {
+		@include shadowed;
+		position: relative;
+		left: 50%;
+		transform: translate(-50%);
+		z-index: 100;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-gap: 0;
+		width: 50rem;
+		height: 50rem;
+		border-radius: 10px;
+		background-color: $color-white;
+		background-image: url("../../../assets/photos/pexels-pixabay-270404.jpg");
+		background-size: contain;
+		background-position: center;
+		@include respond(tab-port) {
+			width: 40rem;
+			height: 40rem;
+		}
+	}
+}

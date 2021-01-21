@@ -1,13 +1,12 @@
 @import "../../../sass/main";
 
 .custom-button {
-	position: absolute;
+	position: relative;
 	font-size: $font-size-l;
 	color: $color-white;
 	background-color: transparent;
 	width: fit-content;
 	text-align: center;
-	border-radius: 5px;
 	border: solid 2px $color-white;
 	margin-top: 3rem;
 	transition: all 0.4s;
@@ -28,12 +27,12 @@
 	}
 
 	&.inverted {
-		background-color: $color-primary;
+		background-color: $color-tertiary;
 		color: $color-white;
+		-webkit-font-smoothing: antialiased;
 
 		&:hover {
 			box-shadow: 1px 5px 20px $color-background;
-			transform: translateY(-0.5rem) scale(1.1);
 		}
 	}
 }

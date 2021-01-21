@@ -1,0 +1,57 @@
+@import "../../../sass/main";
+
+.section-about__tile {
+	position: relative;
+	perspective: 500px;
+	transform-style: preserve-3d;
+	z-index: 500;
+	width: 100%;
+	height: 100%;
+	transition: transform 0.4s;
+	border-radius: 10px;
+	font-size: $font-size-m;
+	font-weight: 600;
+	&--side {
+		backface-visibility: hidden;
+		position: absolute;
+		backdrop-filter: blur(4px);
+	}
+	&--icon {
+		position: absolute;
+		top: 45%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 70%;
+	}
+	&--front {
+		background-color: rgba($color-primary, 0.6);
+		transform: rotateY(0deg);
+		border: $color-dark-gray 1px solid;
+		&-text {
+			position: absolute;
+			top: 90%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: $color-white;
+		}
+	}
+	&:hover &--front {
+		transform: rotateY(180deg);
+	}
+
+	&--back {
+		transform: rotateY(-180deg);
+		background-color: rgba($color-black, 0.6);
+		&-text {
+			will-change: translate;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: $color-white;
+		}
+	}
+	&:hover &--back {
+		transform: rotateY(0deg);
+	}
+}

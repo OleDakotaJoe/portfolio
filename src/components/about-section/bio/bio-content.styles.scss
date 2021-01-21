@@ -1,0 +1,40 @@
+@import "../../../sass/main";
+
+.section-about {
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		font-size: $font-size-l;
+
+		&-container {
+			border-top: 1px solid $color-tertiary;
+			padding-top: $default-padding;
+			margin-top: $default-padding;
+			@include respond(phone) {
+				padding-top: 6rem;
+			}
+		}
+		&-text {
+			width: 60vw;
+			line-height: 1.2;
+			@include respond(phone) {
+				width: 80vw;
+				line-height: 1.5;
+			}
+			&--p1 {
+				margin-bottom: 1.5rem;
+				padding-top: $small-padding;
+				@include respond(phone) {
+					margin-bottom: 2rem;
+				}
+			}
+			&--p2 {
+				padding-top: 1.5rem;
+				@include respond(phone) {
+					padding-top: 2rem;
+				}
+			}
+		}
+	}
+}

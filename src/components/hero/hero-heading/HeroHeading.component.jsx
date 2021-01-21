@@ -4,11 +4,6 @@ import "./hero-heading.styles.scss";
 import CustomButton from "../../reusable/custom-button/CustomButton.component";
 
 const Heading = () => {
-	const buttonStyle = {
-		position: "relative",
-		borderRadius: 0,
-	};
-
 	return (
 		<div className="section-heading__container">
 			<h1 className="section-heading__heading section-heading__heading--main">
@@ -21,7 +16,7 @@ const Heading = () => {
 				I'm a front-end web developer.
 			</h2>
 			<div className="section-heading__heading section-heading__button">
-				<CustomButton style={buttonStyle}>
+				<CustomButton>
 					Enter here&nbsp;
 					<span className="section-heading__heading section-heading__button--arrow">
 						&#10140;

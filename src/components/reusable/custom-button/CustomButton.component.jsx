@@ -11,6 +11,4 @@ const CustomButton = ({ children, inverted, ...otherProps }) => (
 	</button>
 );
 
-const styles = {};
-
 export default CustomButton;

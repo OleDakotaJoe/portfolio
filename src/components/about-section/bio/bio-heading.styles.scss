@@ -1,11 +1,12 @@
 @import "../../../sass/main";
-.heading {
-	&__container {
+.section-about {
+	&__heading-container {
 		line-height: 1.5;
 	}
 	&__heading {
 		font-family: $sans-serif;
 		&--main {
+			width: 50rem;
 			font-size: $font-size-4x;
 			color: $color-tertiary;
 		}

@@ -1,11 +1,12 @@
 import React from "react";
-import logo from "../../../assets/logo/logo.png";
+import Logo from "../../../assets/logo/logo.png";
+
 const BrandLogo = () => {
 	return (
 		<img
-			src={logo}
+			src={Logo}
 			alt="Steven Sheaves's Logo"
-			className="header__navbar-brand--logo"
+			className="component__navbar-brand--logo"
 		/>
 	);
 };

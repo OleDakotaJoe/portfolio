@@ -1,0 +1,11 @@
+@import "../../../sass/main";
+.section-about__profile {
+	&--image {
+		width: 40rem;
+		clip-path: circle();
+		transform: translateY(-15%);
+		@include respond(tab-port) {
+			width: 30rem;
+		}
+	}
+}

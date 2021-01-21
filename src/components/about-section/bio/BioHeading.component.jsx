@@ -3,11 +3,11 @@ import "./bio-heading.styles.scss";
 
 const BioHeading = () => {
 	return (
-		<div className="heading__container">
-			<h2 className="heading__heading heading__heading--main">
+		<div className="section-about__heading-container">
+			<h2 className="section-about__heading section-about__heading--main">
 				Steven Dakota Sheaves
 			</h2>
-			<h2 className="heading__heading heading__heading--sub">
+			<h2 className="section-about__heading section-about__heading--sub">
 				Front-end Web Developer | B.S. Computer Science
 			</h2>
 		</div>

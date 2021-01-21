@@ -1,5 +1,5 @@
 @import "../../sass/main";
-.header {
+.component {
 	&__navbar {
 		z-index: 1000;
 		position: fixed;
@@ -18,14 +18,14 @@
 			rgba($color-background, 1) 100%
 		);
 		border-bottom: 2px solid $color-tertiary;
-		@include respond(phone) {
+		@include respond(tab-port) {
 			flex-direction: column;
 		}
 
 		&-brand {
 			display: flex;
 			padding: 1rem 0;
-			@include respond(phone) {
+			@include respond(tab-port) {
 				padding-left: 2rem;
 			}
 
@@ -45,7 +45,7 @@
 				text-decoration: none;
 				color: $color-primary;
 				transition: all 0.4s;
-				@include respond(phone) {
+				@include respond(tab-port) {
 					font-size: $font-size-xxl;
 				}
 
@@ -74,7 +74,7 @@
 				display: none;
 				z-index: 900;
 
-				@include respond(phone) {
+				@include respond(tab-port) {
 					display: block;
 				}
 				&::before {
@@ -137,7 +137,7 @@
 			transition: color 0.4s;
 			z-index: 1000;
 
-			@include respond(phone) {
+			@include respond(tab-port) {
 				opacity: 0;
 				display: flex;
 				position: absolute;
@@ -174,7 +174,7 @@
 				transition: all 0.4s;
 
 				&--active {
-					transform: scale(20);
+					transform: scale(28);
 					opacity: 1;
 				}
 			}
@@ -190,7 +190,7 @@
 				font-family: $sans-serif;
 				color: $color-white;
 				border-color: $color-tertiary;
-				@include respond(phone) {
+				@include respond(tab-port) {
 					font-size: $font-size-4x;
 					width: 40rem;
 					line-height: 3;
@@ -204,22 +204,22 @@
 				&:hover {
 					// border-right: $color-tertiary solid 1px;
 					// border-left: $color-tertiary solid 1px;
-					@include respond(phone) {
+					@include respond(tab-port) {
 						border: none;
 					}
 				}
 				&:not(:last-child):hover {
-					@include respond(phone) {
+					@include respond(tab-port) {
 						background-color: transparent;
 					}
 				}
 
 				&:last-child {
-					@include respond(phone) {
+					@include respond(tab-port) {
 						background-color: transparent;
 					}
 					&:hover {
-						@include respond(phone) {
+						@include respond(tab-port) {
 							background-color: transparent;
 						}
 					}
@@ -227,7 +227,7 @@
 				&:hover > a {
 					border-bottom: $color-tertiary solid 1px;
 					color: $color-tertiary;
-					@include respond(phone) {
+					@include respond(tab-port) {
 						border: none;
 					}
 				}

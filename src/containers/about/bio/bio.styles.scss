@@ -1,2 +1,21 @@
-.heading__container {
+@import "../../../sass/main";
+.section-about {
+	&__bio-container {
+		margin-bottom: $large-padding;
+		max-width: fit-content;
+	}
+	&__contact-button {
+		&--arrow {
+			will-change: transform;
+			display: inline-block;
+			text-align: center;
+			font-size: $font-size-xl;
+			transform: rotate(0deg);
+			transition: all 0.4s !important;
+		}
+		&:hover &--arrow {
+			display: inline-block;
+			transform: rotate(90deg);
+		}
+	}
 }

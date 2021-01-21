@@ -1,0 +1,16 @@
+@import "../../../sass/main";
+
+.section-about__profile {
+	&--container {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 40%;
+		margin: $default-padding;
+		@include respond(phone) {
+			width: 90%;
+			margin-bottom: $large-padding;
+		}
+	}
+}

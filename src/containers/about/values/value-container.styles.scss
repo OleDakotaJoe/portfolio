@@ -1,0 +1,23 @@
+@import "../../../sass/main";
+
+.section-about__values {
+	&--container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100vw;
+	}
+	&--icon-container {
+		display: flex;
+		flex-direction: row;
+		width: 70%;
+		height: fit-content;
+		justify-content: space-evenly;
+		margin-bottom: $large-padding;
+		flex-wrap: wrap;
+		@include respond(phone) {
+			width: 90%;
+		}
+	}
+}

@@ -206,20 +206,6 @@ const HeroBackground = () => {
 			c.fillRect(0, 0, dimensions.width, dimensions.height);
 		}
 
-		function handleDimensions() {
-			c.clearRect(0, 0, dimensions.width, dimensions.height);
-			let clientHeight = document.documentElement.clientHeight;
-			let clientWidth = document.documentElement.clientWidth;
-			if (
-				dimensions.height !== clientHeight ||
-				dimensions.width !== clientWidth
-			) {
-				dimensions = {
-					height: clientHeight,
-					width: clientWidth,
-				};
-			}
-		}
 		// Implementation
 		let particles;
 		function init() {
