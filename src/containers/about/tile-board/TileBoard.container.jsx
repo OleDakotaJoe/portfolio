@@ -61,8 +61,8 @@ const tileArray = [
 	},
 	{
 		frontText: "Java",
-		backText: "~6 Months of Experience (but I love Java)",
-		imageName: "change.png",
+		backText: "About 6 Months of Experience (but I love Java)",
+		imageName: "java.png",
 		altText: "Java Icon",
 	},
 	{
