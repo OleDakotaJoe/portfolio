@@ -7,5 +7,9 @@
 		@include respond(tab-port) {
 			width: 30rem;
 		}
+
+		&-wrapper {
+			@include drop-shadow;
+		}
 	}
 }

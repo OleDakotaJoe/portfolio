@@ -12,8 +12,12 @@
 	&--icon {
 		background-color: $color-primary;
 		width: 15rem;
+		height: 15rem;
 		padding: 4rem;
 		clip-path: circle();
+		&-wrapper {
+			@include drop-shadow;
+		}
 	}
 	&--quote {
 		margin-top: $medium-padding;

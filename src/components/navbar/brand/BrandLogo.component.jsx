@@ -6,7 +6,7 @@ const BrandLogo = () => {
 		<img
 			src={Logo}
 			alt="Steven Sheaves's Logo"
-			className="component__navbar-brand--logo"
+			className="component-navigation__navbar-brand--logo"
 		/>
 	);
 };

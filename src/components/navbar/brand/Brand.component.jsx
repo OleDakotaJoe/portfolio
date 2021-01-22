@@ -4,7 +4,7 @@ import BrandName from "./BrandName.component";
 
 const fnName = () => {
 	return (
-		<div className="component__navbar-brand">
+		<div className="component-navigation__navbar-brand">
 			<BrandLogo />
 			<BrandName />
 		</div>

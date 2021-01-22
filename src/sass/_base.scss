@@ -73,6 +73,9 @@ table {
 }
 
 @include respond(small-phone) {
+	html {
+		font-size: 30%;
+	}
 }
 
 @include respond(big-desktop) {

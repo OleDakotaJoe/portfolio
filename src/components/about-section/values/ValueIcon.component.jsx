@@ -3,11 +3,13 @@ import "./value.styles.scss";
 
 const ValueIcon = ({ imageName, altText }) => {
 	return (
-		<img
-			alt={altText}
-			src={"/assets/icons/" + imageName}
-			className="section-about__value-card--icon"
-		/>
+		<div className="section-about__value-card--icon-wrapper">
+			<img
+				alt={altText}
+				src={"/assets/icons/" + imageName}
+				className="section-about__value-card--icon"
+			/>
+		</div>
 	);
 };
 

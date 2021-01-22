@@ -12,9 +12,9 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "cross-env AUTOPREFIXER_GRID=autoplace react-scripts start",
+    "build": "cross-env AUTOPREFIXER_GRID=autoplace react-scripts build",
+    "test": "cross-env AUTOPREFIXER_GRID=autoplace react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -27,15 +27,20 @@
     "production": [
       ">0.2%",
       "not dead",
-      "not op_mini all"
+      "not op_mini all",
+      "since 2010"
     ],
     "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
+      "last 2 chrome version",
+      "last 2 firefox version",
+      "last 2 safari version",
+      "last 1 ie version",
+      "since 2010"
     ]
   },
   "devDependencies": {
+    "autoprefixer": "^10.2.3",
+    "cross-env": "^7.0.3",
     "node-sass": "^4.14.1"
   }
 }

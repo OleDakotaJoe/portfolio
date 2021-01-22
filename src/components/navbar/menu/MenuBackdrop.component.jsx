@@ -2,7 +2,10 @@ import React from "react";
 
 const MenuBackdrop = () => {
 	return (
-		<div className="component__navbar-menu-backdrop" id="menu-backdrop"></div>
+		<div
+			className="component-navigation__navbar-menu-backdrop"
+			id="menu-backdrop"
+		></div>
 	);
 };
 

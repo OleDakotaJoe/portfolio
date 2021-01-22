@@ -1,11 +1,13 @@
 @import "../../../sass/main";
 
-.component__section-heading {
-	width: fit-content;
-	margin: 0 auto;
-	font-size: $font-size-4x;
-	font-family: $sans-serif;
-	padding-bottom: $medium-padding;
-	border-bottom: 1px solid $color-tertiary;
-	margin-bottom: $large-padding;
+.component-heading {
+	&__section-heading {
+		width: fit-content;
+		margin: 0 auto;
+		font-size: $font-size-4x;
+		font-family: $sans-serif;
+		padding-bottom: $medium-padding;
+		border-bottom: 1px solid $color-tertiary;
+		margin-bottom: $large-padding;
+	}
 }

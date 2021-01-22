@@ -8,6 +8,7 @@
 		font-size: $font-size-l;
 
 		&-container {
+			width: 70vw;
 			border-top: 1px solid $color-tertiary;
 			padding-top: $default-padding;
 			margin-top: $default-padding;
@@ -16,7 +17,6 @@
 			}
 		}
 		&-text {
-			width: 60vw;
 			line-height: 1.2;
 			@include respond(phone) {
 				width: 80vw;

@@ -11,7 +11,7 @@ const HeroBackground = () => {
 	const canvasRef = useRef(null);
 	const ringColors = ["#f4d326", "#F56C00", "#14b6f4", "#ea80fc", "#c6242b"];
 	const centerColor = ["#F56C00", "#f4d326", "#f4d326", "#f4d326"];
-	const backgroundColor = "#28282810";
+	const backgroundColor = "#20202010"; //#28282810
 	const mouse = {
 		x: undefined,
 		y: undefined,

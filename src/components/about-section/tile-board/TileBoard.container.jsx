@@ -20,13 +20,13 @@ const tileArray = [
 	{
 		frontText: "HTML5",
 		backText: "3 Years of Experience",
-		imageName: "html-5.png",
+		imageName: "html5.png",
 		altText: "HTML5 Icon",
 	},
 	{
 		frontText: "CSS3",
 		backText: "3 Years of Experience",
-		imageName: "css.png",
+		imageName: "css-3.png",
 		altText: "CSS Icon",
 	},
 	{
@@ -50,7 +50,7 @@ const tileArray = [
 	{
 		frontText: "React",
 		backText: "1 Year of Experience",
-		imageName: "react.png",
+		imageName: "atom.png",
 		altText: "React Icon",
 	},
 	{
