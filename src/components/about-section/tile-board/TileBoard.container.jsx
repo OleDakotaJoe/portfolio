@@ -55,13 +55,13 @@ const tileArray = [
 	},
 	{
 		frontText: "SQL ",
-		backText: "~2 Years of Experience",
+		backText: "About 2 Years of Experience",
 		imageName: "postgresql.png",
 		altText: "PostgreSQL icon",
 	},
 	{
 		frontText: "Java",
-		backText: "About 6 Months of Experience (but I love Java)",
+		backText: "About 6 Months of Experience",
 		imageName: "java.png",
 		altText: "Java Icon",
 	},

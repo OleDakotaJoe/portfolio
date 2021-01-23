@@ -6,15 +6,12 @@ import CustomButton from "../../reusable/custom-button/CustomButton.component";
 
 const Bio = () => {
 	return (
-		<div className="section-about__bio-container">
+		<div id="about" className="section-about__bio-container">
 			<BioHeading />
 			<BioContent />
 			<div className="section-about__contact-button">
-				<CustomButton inverted>
-					Contact Me&nbsp;
-					<span className="section-about__contact-button section-about__contact-button--arrow">
-						&#10140;
-					</span>
+				<CustomButton inverted arrow>
+					Contact Me
 				</CustomButton>
 			</div>
 		</div>

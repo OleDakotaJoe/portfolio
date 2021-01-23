@@ -1,26 +1,28 @@
 @import "../../../sass/main";
 
-.custom-button {
+.component-button {
 	position: relative;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-top: 3rem;
+	padding: 1rem 2rem;
+	width: fit-content;
 	font-size: $font-size-l;
+	z-index: 200;
 	color: $color-white;
 	background-color: transparent;
-	width: fit-content;
-	text-align: center;
 	border: solid 2px $color-white;
-	margin-top: 3rem;
-	transition: all 0.4s;
-	z-index: 200;
-	padding: 1rem 2rem;
 	font-family: inherit;
+	transition: all 0.4s;
 	cursor: pointer;
 
 	&:focus,
 	&:active {
-		outline: $color-primary-bold;
+		outline: $color-tertiary;
 	}
 
-	&:hover {
+	&--hover {
 		background-color: $color-tertiary;
 		border: solid 2px $color-tertiary;
 		color: $color-white;
@@ -31,8 +33,20 @@
 		color: $color-white;
 		-webkit-font-smoothing: antialiased;
 
-		&:hover {
-			box-shadow: 1px 5px 20px $color-background;
+		&--hover {
+			@include shadowed;
+		}
+	}
+
+	&__arrow {
+		top: 50%;
+		will-change: transform;
+		height: $font-size-l;
+		transform: rotate(0deg);
+		transition: all 0.4s;
+
+		&--hover {
+			transform: rotate(90deg);
 		}
 	}
 }

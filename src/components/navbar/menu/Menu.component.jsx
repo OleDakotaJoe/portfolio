@@ -6,8 +6,8 @@ const Menu = () => {
 	return (
 		<div>
 			<MenuList>
-				<MenuButton link="#" content="Home" />
-				<MenuButton link="#" content="About" />
+				<MenuButton link="#home" internal content="Home" />
+				<MenuButton link="#about" offset={82} internal content="About" />
 				<MenuButton link="#" content="Portfolio" />
 				<MenuButton link="#" content="Contact" />
 			</MenuList>

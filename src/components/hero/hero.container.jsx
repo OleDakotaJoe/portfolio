@@ -4,7 +4,7 @@ import HeroHeading from "./hero-heading/HeroHeading.component";
 
 const HeroSection = () => {
 	return (
-		<div>
+		<div id="home">
 			<HeroBackground />
 			<HeroHeading />
 		</div>

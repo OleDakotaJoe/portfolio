@@ -1,9 +1,13 @@
 import React from "react";
 import "./hero-heading.styles.scss";
 
+import AnchorLink from "react-anchor-link-smooth-scroll";
+
 import CustomButton from "../../reusable/custom-button/CustomButton.component";
 
 const Heading = () => {
+	//todo come back to this later
+
 	return (
 		<div className="section-heading__container">
 			<h1 className="section-heading__heading section-heading__heading--main">
@@ -15,14 +19,9 @@ const Heading = () => {
 			<h2 className="section-heading__heading section-heading__heading--sub">
 				I'm a front-end web developer.
 			</h2>
-			<div className="section-heading__heading section-heading__button">
-				<CustomButton>
-					Enter here&nbsp;
-					<span className="section-heading__heading section-heading__button--arrow">
-						&#10140;
-					</span>
-				</CustomButton>
-			</div>
+			<AnchorLink offset={82} href="#about" style={{ textDecoration: "none" }}>
+				<CustomButton arrow>Take a look</CustomButton>
+			</AnchorLink>
 		</div>
 	);
 };
