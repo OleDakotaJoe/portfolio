@@ -1,0 +1,41 @@
+@import "../../../sass/main";
+
+.section-contact__contact-form {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 50rem;
+	transform: translate(-50%, -50%);
+	&--heading {
+		font-size: $font-size-m;
+		color: $color-tertiary;
+		padding-bottom: 2rem;
+		font-family: $sans-serif;
+	}
+
+	&--input {
+		background-color: rgba($color-black, 0.4);
+		font-size: $font-size-m;
+		color: $color-white;
+		width: 100%;
+		margin: 2px;
+		height: 4rem;
+		border: 1px solid $color-black;
+		padding: 1rem;
+		&::placeholder {
+			font-family: $sans-serif;
+		}
+		&:focus {
+			outline: none;
+			border: 1px solid $color-primary;
+		}
+	}
+
+	&--message {
+		height: 18rem;
+		resize: none;
+	}
+}

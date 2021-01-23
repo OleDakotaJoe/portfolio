@@ -8,8 +8,8 @@ const Menu = () => {
 			<MenuList>
 				<MenuButton link="#home" internal content="Home" />
 				<MenuButton link="#about" offset={82} internal content="About" />
-				<MenuButton link="#" content="Portfolio" />
-				<MenuButton link="#" content="Contact" />
+				{/* <MenuButton link="#" content="Portfolio" /> */}
+				<MenuButton link="#contact" internal content="Contact" />
 			</MenuList>
 			<MobileMenu />
 		</div>

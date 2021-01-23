@@ -11,8 +11,8 @@
 		height: $navbar-height;
 
 		flex-direction: row;
-		justify-content: center;
-		background-color: $color-near-black;
+		justify-content: flex-start;
+		background-color: $color-darkest-gray;
 		border-bottom: 2px solid $color-tertiary;
 		@include respond(phone) {
 			flex-direction: column;
@@ -21,6 +21,7 @@
 		&-brand {
 			display: flex;
 			padding: 1rem 0;
+			margin-right: 5%;
 			@include respond(phone) {
 				padding-left: 2rem;
 			}
@@ -36,7 +37,6 @@
 				margin-top: auto;
 				margin-bottom: auto;
 				font-size: $font-size-l;
-				padding-right: 10rem;
 				font-family: $brand;
 				text-decoration: none;
 				color: $color-primary;
@@ -137,7 +137,6 @@
 		&-menu {
 			display: flex;
 			flex-direction: row;
-			justify-content: center;
 			transition: color 0.4s;
 			z-index: 1000;
 
@@ -206,8 +205,6 @@
 				}
 
 				&:hover {
-					// border-right: $color-tertiary solid 1px;
-					// border-left: $color-tertiary solid 1px;
 					@include respond(phone) {
 						border: none;
 					}
@@ -228,13 +225,6 @@
 						}
 					}
 				}
-				&:hover > a {
-					border-bottom: $color-tertiary solid 1px;
-					color: $color-tertiary;
-					@include respond(phone) {
-						border: none;
-					}
-				}
 			}
 
 			&--link,
@@ -244,6 +234,13 @@
 				text-decoration: none;
 				color: inherit;
 				padding-bottom: 1rem;
+				&:hover {
+					border-bottom: $color-tertiary solid 1px;
+					color: $color-tertiary;
+					@include respond(phone) {
+						border: none;
+					}
+				}
 			}
 		}
 	}

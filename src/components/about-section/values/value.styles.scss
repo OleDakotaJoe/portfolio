@@ -11,6 +11,12 @@
 		text-align: center;
 		margin-top: 2rem;
 		@include respond(phone) {
+			width: 15rem;
+			height: 20rem;
+			margin: 2rem;
+			font-size: $font-size-s;
+		}
+		@include respond(small-phone) {
 			width: 10rem;
 			height: 10rem;
 			margin: 2rem;
@@ -27,7 +33,7 @@
 			@include drop-shadow;
 		}
 
-		@include respond(phone) {
+		@include respond(small-phone) {
 			width: 8rem;
 			height: 8rem;
 			padding: 2rem;

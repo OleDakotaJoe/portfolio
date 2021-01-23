@@ -11,7 +11,8 @@ const HeroBackground = () => {
 	const canvasRef = useRef(null);
 	const ringColors = ["#f4d326", "#F56C00", "#14b6f4", "#ea80fc", "#c6242b"];
 	const centerColor = ["#F56C00", "#f4d326", "#f4d326", "#f4d326"];
-	const backgroundColor = "#20202010"; //#28282810
+	const backgroundColor = "#191919";
+	const backgroundFillColor = "#20202010";
 	const mouse = {
 		x: undefined,
 		y: undefined,
@@ -27,21 +28,24 @@ const HeroBackground = () => {
 
 		// Event Listeners
 		window.addEventListener("mousemove", (event) => {
-			mouse.x = event.clientX;
-			mouse.y = event.clientY;
+			const rect = canvas.getBoundingClientRect();
+			mouse.x = event.clientX - rect.left;
+			mouse.y = event.clientY - rect.top;
 		});
 
 		window.addEventListener("touchstart", (event) => {
-			mouse.x = event.touches[0].clientX;
-			mouse.y = event.touches[0].clientY;
+			const rect = canvas.getBoundingClientRect();
+			mouse.x = event.touches[0].clientX - rect.left;
+			mouse.y = event.touches[0].clientY - rect.top;
 		});
 		window.addEventListener("touchend", () => {
 			mouse.x = undefined;
 			mouse.y = undefined;
 		});
 		window.addEventListener("touchmove", (event) => {
-			mouse.x = event.touches[0].clientX;
-			mouse.y = event.touches[0].clientY;
+			const rect = canvas.getBoundingClientRect();
+			mouse.x = event.touches[0].clientX - rect.left;
+			mouse.y = event.touches[0].clientY - rect.top;
 		});
 
 		window.addEventListener("resize", () => {
@@ -214,13 +218,14 @@ const HeroBackground = () => {
 				dimensions.width > 1800
 					? dimensions.width / 1920
 					: dimensions.width / 1000;
+			initBackground(backgroundColor);
 			particles = [];
 			initCore(particles, scale);
 			initRings(particles, scale);
 		}
 		// Animation Loop
 		function animate() {
-			initBackground(backgroundColor);
+			initBackground(backgroundFillColor);
 			requestAnimationFrame(animate);
 			particles.forEach((particle) => {
 				particle.update();

@@ -6,7 +6,7 @@ const fnName = () => {
 	return (
 		<div className="component-navigation__navbar-brand">
 			<BrandLogo />
-			<BrandName />
+			{/* <BrandName /> */}
 		</div>
 	);
 };

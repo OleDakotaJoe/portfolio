@@ -3,7 +3,6 @@ import "./tile.styles.scss";
 
 const Tile = ({ imageName, frontText, backText, altText }) => {
 	const [isFlipped, setFlipped] = useState(false);
-	console.log(isFlipped);
 	return (
 		<div
 			onMouseEnter={() => setFlipped(true)}

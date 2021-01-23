@@ -1,5 +1,8 @@
 import React from "react";
 import "./bio.styles.scss";
+
+import AnchorLink from "react-anchor-link-smooth-scroll";
+
 import BioHeading from "./BioHeading.component";
 import BioContent from "./BioContent.component";
 import CustomButton from "../../reusable/custom-button/CustomButton.component";
@@ -9,11 +12,11 @@ const Bio = () => {
 		<div id="about" className="section-about__bio-container">
 			<BioHeading />
 			<BioContent />
-			<div className="section-about__contact-button">
+			<AnchorLink href="#contact" className="section-about__contact-button">
 				<CustomButton inverted arrow>
 					Contact Me
 				</CustomButton>
-			</div>
+			</AnchorLink>
 		</div>
 	);
 };

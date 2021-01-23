@@ -1,0 +1,17 @@
+@import "../../../sass/main";
+
+.section-contact__background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	&--1 {
+		clip-path: polygon(0% 0%, 50% 15%, 100% 0%, 100% 100%, 0% 100%);
+		background-color: $color-tertiary;
+	}
+	&--2 {
+		clip-path: polygon(0% 0%, 50% 18%, 100% 0%, 100% 100%, 0% 100%);
+		background-color: $color-darkest-gray;
+	}
+}

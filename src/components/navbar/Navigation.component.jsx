@@ -4,6 +4,7 @@ import Menu from "./menu/Menu.component";
 import Brand from "./brand/Brand.component";
 
 const Navbar = () => {
+	//TODO Make This more react-friendly
 	useEffect(() => {
 		const menu = document.getElementById("navbar-menu");
 		const backdrop = document.getElementById("menu-backdrop");

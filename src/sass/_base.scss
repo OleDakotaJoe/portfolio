@@ -1,4 +1,5 @@
 @import "./mixins";
+@import "./variables";
 
 *,
 *::before,
@@ -33,6 +34,7 @@ section {
 body {
 	line-height: 1;
 	-webkit-font-smoothing: antialiased;
+	background-color: $color-off-white;
 }
 ol,
 ul {
