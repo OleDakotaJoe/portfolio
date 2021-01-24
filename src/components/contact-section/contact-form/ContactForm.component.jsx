@@ -37,7 +37,7 @@ const ContactForm = () => {
 				Want to get connected?
 			</h4>
 			<div className="section-contact__contact-form--upper-container">
-				<div className="section-contact__contact-form--upper-container-row section-contact__contact-form--upper-container-row-1">
+				<div className="section-contact__contact-form--upper-container-row">
 					<div className="section-contact__contact-form--label-box section-contact__contact-form--label-box--name">
 						<label
 							htmlFor="name"
@@ -55,7 +55,7 @@ const ContactForm = () => {
 						</label>
 					</div>
 				</div>
-				<div className="section-contact__contact-form--upper-container-row section-contact__contact-form--upper-container-row-2">
+				<div className="section-contact__contact-form--upper-container-row ">
 					<input
 						name="from_name"
 						id="name"
