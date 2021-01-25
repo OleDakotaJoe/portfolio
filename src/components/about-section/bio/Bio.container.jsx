@@ -9,7 +9,11 @@ import CustomButton from "../../reusable/custom-button/CustomButton.component";
 
 const Bio = () => {
 	return (
-		<div id="about" className="section-about__bio-container">
+		<div
+			data-aos="slide-up-fade"
+			id="about"
+			className="section-about__bio-container"
+		>
 			<BioHeading />
 			<BioContent />
 			<AnchorLink href="#contact" className="section-about__contact-button">

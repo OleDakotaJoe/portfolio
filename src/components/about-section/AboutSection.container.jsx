@@ -2,7 +2,7 @@ import React from "react";
 import "./about-section.styles.scss";
 import Bio from "./bio/Bio.container";
 import Profile from "./profile/Profile.container";
-import TileBoard from "./tile-board/TileBoard.container";
+import SkillsGraph from "./skills-graph/SkillsGraph.container";
 import ValueContainer from "./values/ValueContainer.container";
 
 const AboutSection = () => {
@@ -12,7 +12,7 @@ const AboutSection = () => {
 			<ValueContainer />
 			<div className="section-about__skills-profile-container">
 				<Profile />
-				<TileBoard />
+				<SkillsGraph />
 			</div>
 		</section>
 	);

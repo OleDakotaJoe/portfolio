@@ -19,7 +19,7 @@ const Heading = () => {
 			<h2 className="section-heading__heading section-heading__heading--sub">
 				I'm a front-end web developer.
 			</h2>
-			<AnchorLink offset={82} href="#about" style={{ textDecoration: "none" }}>
+			<AnchorLink offset={182} href="#about" style={{ textDecoration: "none" }}>
 				<CustomButton arrow>Take a look</CustomButton>
 			</AnchorLink>
 		</div>

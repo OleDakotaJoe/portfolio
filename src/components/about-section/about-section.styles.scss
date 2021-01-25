@@ -14,6 +14,7 @@
 		justify-content: space-evenly;
 		width: 80%;
 		align-items: center;
+		margin-top: 10rem;
 
 		@include respond(tab-land) {
 			width: 100%;

@@ -7,7 +7,7 @@
 		flex-direction: column;
 		align-items: center;
 		width: 40%;
-		margin: $default-padding;
+		margin-top: 12rem;
 		@include respond(phone) {
 			width: 90%;
 			margin-bottom: $large-padding;

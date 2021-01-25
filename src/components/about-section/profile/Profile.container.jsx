@@ -6,7 +6,10 @@ import ProfileImage from "./ProfileImage.component";
 
 const Profile = () => {
 	return (
-		<div className="section-about__profile--container">
+		<div
+			className="section-about__profile--container"
+			data-aos="slide-in-from-left"
+		>
 			<ProfileImage />
 			<ProfileDescription />
 		</div>

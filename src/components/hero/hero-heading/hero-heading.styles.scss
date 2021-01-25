@@ -1,5 +1,14 @@
 @import "../../../sass/main";
 
+@include keyframes(fade-in) {
+	0% {
+		opacity: 0;
+	}
+	90% {
+		opacity: 1;
+	}
+}
+
 .section-heading {
 	&__container {
 		position: absolute;
@@ -18,8 +27,10 @@
 		color: white;
 		font-size: $font-size-4x;
 		&--main {
+			@include fade-in;
 		}
 		&--sub {
+			@include fade-in;
 		}
 		&--highlighted-name {
 			color: $color-primary;

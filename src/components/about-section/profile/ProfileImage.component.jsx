@@ -1,6 +1,6 @@
 import React from "react";
 import "./profile-image.styles.scss";
-import image from "../../../assets/photos/10959349_10200195937618306_1684052236907503226_n.jpg";
+import image from "../../../assets/photos/male-close-up-silhouette-with-tie.png";
 const ProfileImage = () => {
 	return (
 		<div className="section-about__profile--image-wrapper">

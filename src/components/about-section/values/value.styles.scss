@@ -24,7 +24,11 @@
 		}
 	}
 	&--icon {
-		background-color: $color-primary;
+		background-image: radial-gradient(
+			center,
+			$color-primary-variant,
+			$color-primary
+		);
 		width: 15rem;
 		height: 15rem;
 		padding: 4rem;
