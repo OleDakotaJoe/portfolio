@@ -16,16 +16,42 @@
 	font-family: $sans-serif;
 	transition: all 0.4s;
 	cursor: pointer;
+	overflow: hidden;
 
 	&:focus,
 	&:active {
 		outline: $color-tertiary;
 	}
 
-	&--hover {
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		background-color: transparent;
+		height: 100%;
+		width: 10%;
+		opacity: 01;
+		z-index: -1;
+		transition: all 0.15s ease;
+	}
+
+	&--hover::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
 		background-color: $color-tertiary;
+		height: 100%;
+		width: 20%;
+		opacity: 01;
+		z-index: -1;
+		transform: translateX(-50%) scale(5);
+	}
+	&--hover {
 		border: solid 2px $color-tertiary;
-		color: $color-white;
 	}
 
 	&.inverted {

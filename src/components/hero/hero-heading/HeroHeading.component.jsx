@@ -27,7 +27,7 @@ const Heading = () => {
 				href="#about"
 				style={{ textDecoration: "none" }}
 			>
-				<CustomButton arrow>Take a look</CustomButton>
+				<CustomButton>Take a look</CustomButton>
 			</AnchorLink>
 		</div>
 	);
