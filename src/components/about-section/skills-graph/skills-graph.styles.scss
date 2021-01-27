@@ -28,6 +28,7 @@
 			padding-right: 2rem;
 		}
 		&--description {
+			position: absolute;
 			font-size: $font-size-s;
 			color: $color-off-white;
 			padding-left: 1rem;
@@ -36,11 +37,7 @@
 
 	&__bar {
 		height: 100%;
-		background-image: linear-gradient(
-			to right,
-			$color-primary-variant,
-			$color-primary
-		);
+		background-color: $color-primary-variant;
 		border-radius: 2px;
 		display: flex;
 		flex-direction: row;

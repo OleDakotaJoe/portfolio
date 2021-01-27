@@ -2,7 +2,10 @@
 
 .section-contact {
 	position: relative;
-	height: 80rem;
+	height: 65rem;
 	background-color: $color-off-white;
 	margin-top: 8rem;
+	@include respond(phone) {
+		height: 90rem;
+	}
 }

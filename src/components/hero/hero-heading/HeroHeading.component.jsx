@@ -1,12 +1,15 @@
 import React from "react";
 import "./hero-heading.styles.scss";
+import { getElementHeight } from "../../../utils/getCSSValues.utils";
 
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 import CustomButton from "../../reusable/custom-button/CustomButton.component";
 
 const Heading = () => {
-	//todo come back to this later
+	const getNavbarHeight = () => {
+		return getElementHeight(document.getElementById("navbar"));
+	};
 
 	return (
 		<div className="section-heading__container">
@@ -19,7 +22,11 @@ const Heading = () => {
 			<h2 className="section-heading__heading section-heading__heading--sub">
 				I'm a front-end web developer.
 			</h2>
-			<AnchorLink offset={182} href="#about" style={{ textDecoration: "none" }}>
+			<AnchorLink
+				offset={() => getNavbarHeight()}
+				href="#about"
+				style={{ textDecoration: "none" }}
+			>
 				<CustomButton arrow>Take a look</CustomButton>
 			</AnchorLink>
 		</div>

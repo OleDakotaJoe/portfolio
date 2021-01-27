@@ -7,7 +7,7 @@ import ValueContainer from "./values/ValueContainer.container";
 
 const AboutSection = () => {
 	return (
-		<section className="section-about">
+		<section className="section-about" id="about">
 			<Bio />
 			<ValueContainer />
 			<div className="section-about__skills-profile-container">

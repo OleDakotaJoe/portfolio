@@ -9,6 +9,7 @@ const Profile = () => {
 		<div
 			className="section-about__profile--container"
 			data-aos="slide-in-from-left"
+			data-aos-once="true"
 		>
 			<ProfileImage />
 			<ProfileDescription />

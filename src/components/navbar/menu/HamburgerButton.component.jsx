@@ -1,18 +1,20 @@
-import React from "react";
-
+import React, { useContext } from "react";
+import { MobileMenuContext } from "./Menu.component.jsx";
 const HamburgerButton = () => {
+	const { toggleMobileMenu, isActive } = useContext(MobileMenuContext);
+
 	return (
-		<div className="component-navigation__navbar-hamburger-button--container">
-			<input
-				className="component-navigation__navbar-hamburger-button--checkbox"
-				type="checkbox"
-				id="menu-button"
-			/>
-			<label
-				className="component-navigation__navbar-hamburger-button--checkbox-label"
-				htmlFor="menu-button"
-			></label>
-			<div className="component-navigation__navbar-hamburger-button--button">
+		<div
+			className="component-navigation__navbar-hamburger-button--container"
+			onClick={toggleMobileMenu}
+		>
+			<div
+				className={`component-navigation__navbar-hamburger-button--button ${
+					isActive
+						? "component-navigation__navbar-hamburger-button--button--active"
+						: ""
+				}`}
+			>
 				&nbsp;
 			</div>
 		</div>

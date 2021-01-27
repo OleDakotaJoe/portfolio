@@ -42,6 +42,31 @@
 @mixin fade-in {
 	@include animation("fade-in 1s");
 }
+
+@mixin bounce-up-infinite {
+	@include animation(bounce-up 1s infinite);
+}
+
+@include keyframes(bounce-up) {
+	0% {
+		transform: translateY(0);
+	}
+	// 40% {
+	// 	transform: translateY(0);
+	// }
+	50% {
+		transform: translateY(-0.5rem);
+	}
+	// 60% {
+	// 	transform: translateY(-0.5rem);
+	// }
+	70% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
 // <<------------------------MEDIA QUERY MANAGER------------------------>>
 
 /*

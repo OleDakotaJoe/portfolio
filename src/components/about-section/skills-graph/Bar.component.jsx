@@ -17,9 +17,8 @@ const Bar = ({ imageName, altText, percent, description }) => {
 						style={{ width: percent }}
 						data-aos="grow-right"
 						data-aos-anchor=".skills-graph"
-					>
-						<p className="skills-graph__image--description">{description}</p>
-					</div>
+					></div>
+					<p className="skills-graph__image--description">{description}</p>
 				</div>
 			</div>
 		</div>

@@ -58,7 +58,13 @@
 				top: 0;
 				right: 0;
 				width: 60px;
-				height: 40px;
+				height: 60px;
+				pointer-events: none;
+				z-index: 2000;
+				@include respond(phone) {
+					cursor: pointer;
+					pointer-events: all;
+				}
 			}
 			&--button {
 				position: absolute;
@@ -69,9 +75,7 @@
 				background-color: $color-white;
 				height: 2px;
 				display: none;
-				z-index: 0;
 				@include respond(phone) {
-					z-index: 900;
 					display: block;
 				}
 				&::before {
@@ -94,44 +98,21 @@
 					width: 20px;
 					transition: all 0.2s;
 				}
-			}
 
-			&--checkbox {
-				display: none;
-				pointer-events: none;
-				@include respond(phone) {
-					pointer-events: all;
+				&--active {
+					visibility: hidden;
 				}
-				&-label {
-					position: absolute;
-					top: 50%;
-					left: 50%;
-					transform: translate(-50%, -50%);
-					width: 50px;
-					height: 50px;
-					z-index: 1000;
-					pointer-events: none;
-					@include respond(phone) {
-						pointer-events: all;
-					}
+				&--active::before {
+					visibility: visible;
+					top: 0;
+					transform: rotate(225deg);
 				}
-			}
 
-			&--checkbox:checked ~ &--button {
-				color: $color-tertiary;
-				visibility: hidden;
-			}
-			&--checkbox:checked ~ &--button::before {
-				color: $color-tertiary;
-				visibility: visible;
-				top: 0;
-				transform: rotate(225deg);
-			}
-			&--checkbox:checked ~ &--button::after {
-				color: $color-tertiary;
-				visibility: visible;
-				top: 0;
-				transform: rotate(-225deg);
+				&--active::after {
+					visibility: visible;
+					top: 0;
+					transform: rotate(-225deg);
+				}
 			}
 		}
 

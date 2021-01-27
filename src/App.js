@@ -1,10 +1,12 @@
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import AOS from "aos";
 
 import Navbar from "./components/navbar/Navigation.component";
 import AboutSection from "./components/about-section/AboutSection.container";
 import HeroSection from "./components/hero/hero.container";
 import ContactSection from "./components/contact-section/ContactSection.container";
+import Footer from "./components/footer/Footer.container";
+export const AnimationOffsetContext = React.createContext();
 
 function App() {
 	useEffect(() => {
@@ -14,7 +16,7 @@ function App() {
 			once: true,
 		});
 		AOS.refresh();
-	}, []);
+	});
 
 	return (
 		<div className="site-wrapper">
@@ -22,6 +24,7 @@ function App() {
 			<HeroSection />
 			<AboutSection />
 			<ContactSection />
+			<Footer />
 		</div>
 	);
 }

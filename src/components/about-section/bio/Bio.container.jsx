@@ -11,7 +11,7 @@ const Bio = () => {
 	return (
 		<div
 			data-aos="slide-up-fade"
-			id="about"
+			data-aos-id="about"
 			className="section-about__bio-container"
 		>
 			<BioHeading />

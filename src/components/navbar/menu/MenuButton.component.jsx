@@ -1,13 +1,16 @@
-import React from "react";
-
+import React, { useContext } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import { MobileMenuContext } from "./Menu.component.jsx";
 
 const MenuButton = ({ link, content, offset, internal }) => {
-	const checkbox = document.getElementById("menu-button");
+	const { isActive, toggleMobileMenu } = useContext(MobileMenuContext);
 
-	const uncheck = () => {
-		checkbox.checked = false;
+	const closeMobileMenu = () => {
+		if (isActive) {
+			toggleMobileMenu();
+		}
 	};
+
 	const anchorElement = internal ? (
 		<AnchorLink
 			href={link}
@@ -22,7 +25,10 @@ const MenuButton = ({ link, content, offset, internal }) => {
 		</a>
 	);
 	return (
-		<li className="component-navigation__navbar-menu--option">
+		<li
+			onClick={closeMobileMenu}
+			className="component-navigation__navbar-menu--option"
+		>
 			{anchorElement}
 		</li>
 	);

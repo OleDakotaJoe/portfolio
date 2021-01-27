@@ -1,0 +1,30 @@
+@import "../../../sass/main";
+
+.component-circle-button {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	width: 5rem;
+	height: 5rem;
+	border-radius: 5rem;
+	background-color: $color-primary;
+	transition: all 0.2s;
+	backface-visibility: hidden;
+
+	&:hover {
+		background-color: $color-tertiary;
+		transition: all 0.2s;
+	}
+	&:hover &__image--animated {
+		@include bounce-up-infinite;
+	}
+
+	&__image {
+		background-color: transparent !important;
+		display: block;
+		width: 3rem;
+		height: 3rem;
+	}
+}

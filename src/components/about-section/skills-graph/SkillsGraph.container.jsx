@@ -9,8 +9,8 @@ const SkillsGraph = () => {
 		<div data-aos="slide-in-from-right">
 			<SectionHeading>Skills and Technologies</SectionHeading>
 			<div className="skills-graph">
-				{skillArray.map((skill) => (
-					<Bar {...skill} />
+				{skillArray.map((skill, index) => (
+					<Bar {...skill} key={index} />
 				))}
 				<Timeline />
 			</div>

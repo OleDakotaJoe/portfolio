@@ -11,6 +11,7 @@
 		@include respond(phone) {
 			width: 90%;
 			margin-bottom: $large-padding;
+			margin-top: 6rem;
 		}
 	}
 }
