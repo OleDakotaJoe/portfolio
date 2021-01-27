@@ -14,5 +14,13 @@
 	}
 
 	&__social {
+		position: absolute;
+		top: 80%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		width: 20rem;
 	}
 }

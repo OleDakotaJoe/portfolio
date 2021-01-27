@@ -6,8 +6,8 @@
 	justify-content: center;
 	align-items: center;
 	position: relative;
-	width: 5rem;
-	height: 5rem;
+	width: 5.5rem;
+	height: 5.5rem;
 	border-radius: 5rem;
 	background-color: $color-primary;
 	transition: all 0.2s;
@@ -15,7 +15,6 @@
 
 	&:hover {
 		background-color: $color-tertiary;
-		transition: all 0.2s;
 	}
 	&:hover &__image--animated {
 		@include bounce-up-infinite;
@@ -26,5 +25,12 @@
 		display: block;
 		width: 3rem;
 		height: 3rem;
+	}
+
+	&--inverted {
+		background-color: $color-dark-gray;
+		&:hover {
+			background-color: $color-tertiary;
+		}
 	}
 }
